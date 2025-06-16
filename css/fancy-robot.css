@@ -1,38 +1,210 @@
 .robot-container {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .robot-face-shape {
+  width: 400px;
+  height: 450px;
+  background: darkgray;
+  position: relative;
+  top: 200px;
+  left: 75px;
+  border-radius: 85px;
 }
 
 .robot-eye-left {
+  width: 110px;
+  height: 50px;
+  transform: skew(20deg);
+  background: black;
+  border-radius: 20px;
+  position: absolute;
+  top: 90px;
+  left: 40px;
 }
 
 .robot-eye-right {
+  width: 100px;
+  height: 10px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 125px;
+  left: 240px;
 }
 
 .robot-ear-left {
+  width: 0;
+  height: 0;
+  border-top: 75px solid transparent;
+  border-right: 50px solid rgb(149, 93, 40);
+  border-bottom: 75px solid transparent;
+  position: relative;
+  bottom: 300px;
+  left: 25px;
 }
 
 .robot-ear-right {
+  width: 0;
+  height: 0;
+  border-top: 75px solid transparent;
+  border-left: 50px solid rgb(149, 93, 40);
+  border-bottom: 75px solid transparent;
+  position: relative;
+  left: 475px;
+  bottom: 450px;
 }
 
 .robot-nose {
+  display: block;
+  width: 80px;
+  height: 120px;
+  background-color: rgb(84, 84, 84);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: absolute;
+  top: 160px;
+  left: 160px;
 }
 
-.robot-teeth {
+.robot-mouth {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 60px;
+  width: 200px;
+}
+
+.robot-mouth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 5%;
+  background: black;
+  transform: skew(0deg, 6deg);
+  position: absolute;
+  top: 700px;
+  right: 50px;
+}
+
+.robot-mouth {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40%;
+  width: 20%;
+  background: rgb(57, 57, 57);
+  transform: rotate(50deg) skew(-20deg);
+  position: absolute;
+  top: 245px;
+  right: 120px;
+  border-radius: 20px;
 }
 
 .robot-tooth {
+  border-bottom: 30px solid ivory;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 50px;
+  transform: rotate(90deg);
+  position: relative;
+  right: 21px;
+  bottom: 0px;
+  border-radius: 15px;
 }
 
-.robot-hair-style {
+.robot-bow-tie {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  box-sizing: content-box;
 }
 
-.robot-hair-one {
+.robot-bow-tie::before,
+.robot-bow-tie::after {
+  content: "";
+  box-sizing: content-box;
+  position: absolute;
+  top: -150px;
+  left: 160px;
+  width: 60px;
+  height: 60px;
+  border: 20px solid rgb(149, 93, 40);
+  border-radius: 50px 50px 0 50px;
+  transform: rotate(-45deg);
+}
+.robot-bow-tie::after {
+  left: auto;
+  right: -300px;
+  border-radius: 50px 50px 50px 0;
+  transform: rotate(45deg);
 }
 
-.robot-hair-two {
+.robot-bow-tie-two {
+  position: relative;
+  width: 100px;
+  height: 75px;
+  margin: 228px;
+  margin-top: -300px;
+  background: rgb(149, 93, 40);
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: 0.1em;
+}
+.robot-bow-tie-two:before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
 }
 
-.robot-hair-three {
+.robot-brow {
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 0 0 gray;
+  position: relative;
+  left: 325px;
+  bottom: 485px;
+  transform: rotate(80deg);
+}
+
+.robot-pupil {
+  width: 30px;
+  height: 30px;
+  background: greenyellow;
+  border-radius: 50%;
+  position: relative;
+  left: 160px;
+  bottom: 490px;
+}
+
+.robot-hat {
+  width: 200px;
+  height: 100px;
+  background: black;
+  border-radius: 100px / 50px;
+  position: relative;
+  left: 170px;
+  bottom: 665px;
+}
+.robot-hat-one {
+  width: 100px;
+  height: 200px;
+  background: black;
+  position: relative;
+  bottom: 880px;
+  left: 220px;
 }
