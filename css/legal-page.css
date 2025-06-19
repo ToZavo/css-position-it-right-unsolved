@@ -35,7 +35,8 @@ section {
 
 .section-label {
   position: sticky;
-  top: 80px;
+  top: 100px;
+  align-self: flex-start;
   background-color: #2b2d3b;
   color: white;
   padding: 0.5em 1em;
