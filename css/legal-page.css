@@ -3,6 +3,11 @@
   padding: 30px;
   margin-top: 60px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .legal-header h1 {
@@ -12,27 +17,40 @@
 }
 
 main {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 section {
   display: flex;
   gap: 30px;
   position: relative;
-  border-bottom: 1px solid grey;
-  padding: 30px;
+  padding: 120px 30px 30px 30px;
   max-width: 900px;
   margin: 0 auto;
   color: white;
+  align-items: flex-start;
+  min-height: 150vh;
 }
 
 .section-label {
-  width: 100%;
+  position: sticky;
+  top: 80px;
   background-color: #2b2d3b;
-  height: max-content;
-  padding: 10px 16px;
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  z-index: 10;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .document-content {
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -40,7 +58,8 @@ section {
 }
 
 .document-content p {
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .document-content ol {
@@ -53,12 +72,16 @@ section {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   width: 100%;
   background-color: #e2e2e2;
   padding: 0 30px;
   min-height: 70px;
+  z-index: 1000;
 }
 
 .footer-content {
